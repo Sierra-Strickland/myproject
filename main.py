@@ -1,4 +1,7 @@
 # importing libraries
+import matplotlib
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 
 try:
@@ -27,4 +30,4 @@ plt.plot(xData, yData)
 plt.xlabel('X label')
 plt.ylabel('Y label')
 plt.title('Title')
-plt.show()
+plt.savefig('gasPlot.png')
