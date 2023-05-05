@@ -29,10 +29,6 @@ for line in data:
 # sets the x-axis to show the month of april every 3 years, 36 months, so that the x-axis is not so cluttered
 xTicks = x[::36]
 
-# debugging statement
-print(f"x: {x}")
-print(f"y: {y}")
-
 # sets the assigns the xAxis and yAxis variable to the corresponding axes
 xAxis, yAxis = plt.subplots()
 
@@ -44,9 +40,9 @@ plt.plot(x, y)
 # rotates the x-axis labels 90 degrees so it is easier to read.
 plt.xticks(xTicks, rotation = 90)
 # gives the x-axis a title
-plt.xlabel('Year')
+plt.xlabel('Date (Year)')
 # gives the y-axis a title
-plt.ylabel('Gas Price ($)')
+plt.ylabel('Gas Prices (Dollar Per Gallon)')
 # gives the graph a title
 plt.title('Gas Prices for the Past 30 Years')
 # saves the graph as a png
