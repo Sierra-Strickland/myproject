@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 
 try:
-    with open('./gasData.dat', 'r') as file:
+    with open('./gasData.dat', 'r', newline = '\r\n') as file:
         data = file.readlines()
 except FileNotFoundError:
     print("File not found")
@@ -13,7 +13,7 @@ yData = []
 
 for line in data:
     try:
-        x, y = line.split()
+        x, y = line.strip().split(',')
         xData.append(x)
         yData.append(float(y))
     except ValueError:
