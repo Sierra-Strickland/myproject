@@ -11,23 +11,30 @@ except FileNotFoundError:
     print("File not found")
     exit()
 
-xData = []
-yData = []
+x = []
+y = []
 
 for line in data:
     try:
-        x, y = line.strip().split(',')
-        xData.append(x)
-        yData.append(float(y))
+        i = line.strip().split(',')
+        x.append(i[0])
+        y.append(float(i[1]))
     except ValueError:
         print(f"Skipping line: {line}")
         continue
 
-print(f"xData: {xData}")
-print(f"yData: {yData}")
+xTicks = x[::36]
 
-plt.plot(xData, yData)
-plt.xlabel('X label')
-plt.ylabel('Y label')
-plt.title('Title')
+print(f"x: {x}")
+print(f"y: {y}")
+
+xAxis, yAxis = plt.subplots()
+
+xAxis.subplots_adjust(bottom = 0.2)
+
+plt.plot(x, y)
+plt.xticks(xTicks, rotation = 90)
+plt.xlabel('Month')
+plt.ylabel('Gas Price')
+plt.title('Gas Prices for the Past 30 Years')
 plt.savefig('gasPlot.png')
