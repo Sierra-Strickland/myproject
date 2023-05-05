@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 ﻿Back to Contents,Data 1: U.S. All Grades All Formulations Retail Gasoline Prices (Dollars per Gallon)
 Sourcekey,EMM_EPM0_PTE_NUS_DPG
 Date,U.S. All Grades All Formulations Retail Gasoline Prices (Dollars per Gallon)
 Apr-1993,1.078
+=======
+﻿Apr-1993,1.078
+>>>>>>> 313207a (Trying to add the .dat file)
 May-1993,1.1
 Jun-1993,1.097
 Jul-1993,1.078
@@ -361,5 +365,9 @@ Dec-2022,3.324
 Jan-2023,3.445
 Feb-2023,3.501
 Mar-2023,3.535
+<<<<<<< HEAD
 Apr-2023,3.711
 ,
+=======
+Apr-2023,3.711
+>>>>>>> 313207a (Trying to add the .dat file)
